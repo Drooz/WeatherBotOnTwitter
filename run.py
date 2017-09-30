@@ -43,7 +43,7 @@ def job():
     print (tweet)
     api.update_status(status=tweet)
 
-schedule.every(1).minutes.do(job)
+schedule.every(120).minutes.do(job)
 schedule.every().hour.do(job)
 schedule.every().day.at("10:30").do(job)
 schedule.every().monday.do(job)
