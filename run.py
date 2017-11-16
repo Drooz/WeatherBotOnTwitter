@@ -2,6 +2,15 @@
 import schedule
 import time
 
+
+def getLoc(city)
+    url = "http://maps.google.cn/maps/api/geocode/json?address=" + city
+    response = urllib.request.urlopen(url);
+    s1 = response.read()
+    data = json.loads(s1.decode())
+    # GET LOCATION
+
+
 def job():
     #!/usr/bin/env python
     # -*- coding: utf-8 -*-
